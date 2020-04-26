@@ -97,5 +97,5 @@ To most closely follow HTTP Header authentication practices recommended by Apoll
 * Rather difficult to migrate away from Auth0 to another service or a homespun solution in the future. The security/ownership tradeoff I've made is to entrust Auth0 with all my sensitive user information. I could choose to migrate to my own database storage and maintain a connection to Auth0, but there are vulnerabilities introduced there that are nice to avoid.
 * A little harder to manually authenticate and just directly pass login credentials in a query and have the resolver manage to handle that and retrieve the data requested.
 
-For simplicity, I'm also just directly using an Apollo Server instance rather than plugging it in to a more full fledged server framework like Express. Clear downsides in limited functionality and optionality here, but the upside is a slightly more straightforward and implementation which served my very limited purposes here well.
+For simplicity, I'm also just directly using an Apollo Server instance rather than plugging it in to a more full fledged server framework like Express. Clear downsides in limited functionality and optionality here, but the upside is a slightly more straightforward implementation which served my very limited purposes here well.
 
