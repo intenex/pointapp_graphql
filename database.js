@@ -21,17 +21,17 @@ TweetModel.belongsTo(UserModel);
 // test fake data
 // faker.seed(1000);
 // db.sync({ force: true }).then(() => {
-//   _.times(2, () => {
-//     return UserModel.create({
-//       email: faker.internet.email(),
-//     }).then((user) => {
-//       _.times(2, () => {
-//         user.createTweet({
-//           body: faker.lorem.sentence(),
-//         });
-//       });
-//     });
-//   });
+  // _.times(2, () => {
+  //   return UserModel.create({
+  //     email: faker.internet.email(),
+  //   }).then((user) => {
+  //     _.times(2, () => {
+  //       user.createTweet({
+  //         body: faker.lorem.sentence(),
+  //       });
+  //     });
+  //   });
+  // });
 // });
 
 export const User = db.models.user;
