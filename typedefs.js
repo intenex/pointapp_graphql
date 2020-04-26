@@ -24,11 +24,7 @@ const typeDefs = gql`
 
   type Mutation {
     createUser(email: String!): User!
-    updateUser(email: String!): User!
-    deleteUser(email: String!): Boolean!
     createTweet(body: String!): Tweet!
-    updateTweet(id: Int!, body: String!): Tweet!
-    deleteTweet(id: Int!): Boolean!
   }
 `;
 
